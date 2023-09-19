@@ -1,38 +1,48 @@
 # Heart-Disease-Classification
-# Dataset: Heart_2020_cleaned
+# Heart Disease Analysis
 
-This repository contains the Heart_2020_cleaned dataset and analysis code for performing data analysis and generating insights related to heart health.
+This project focuses on analyzing a dataset called `heart_2020_cleaned.csv` to gain insights into heart disease. The dataset contains various features such as age, sex, smoking habits, alcohol drinking habits, and more. Let's go through the steps taken in this analysis:
 
-## Dataset Description
+## Importing Libraries
 
-The "Heart_2020_cleaned" dataset is a cleaned version of the original Heart dataset, which contains various attributes related to heart health. It has been preprocessed to ensure data quality and remove any inconsistencies or missing values.
+We start by importing the necessary libraries for data analysis and visualization: `pandas`, `numpy`, `matplotlib.pyplot`, and `seaborn`.
 
-The dataset includes the following features:
+## Reading Data
 
-- Age: The age of the individual (in years)
-- Sex: The gender of the individual (0 = female, 1 = male)
-- ... (add more relevant features)
+Next, we read the data from the CSV file using `pd.read_csv()` function. We also check the shape of the data to understand the number of rows and columns.
 
-The dataset is provided in a CSV format and can be found in the "data" directory of this repository.
+## Data Information
 
-## Analysis Code
+We then print the head of the data to get a glimpse of the dataset. After that, we check the data types of the columns using `HeartDiseaseData.dtypes` and display the general information of the dataset using `HeartDiseaseData.info()`. Lastly, we check the number of null values in the dataset using `HeartDiseaseData.isnull().sum()`.
 
-The analysis code is written in Python and is available in the "analysis" directory. It includes scripts for performing exploratory data analysis, data visualization, and building predictive models related to heart health. The code is well-documented and organized to facilitate understanding and reusability.
+## Creating DataFrame and Dropping NaN Values
 
-To run the analysis code, follow these steps:
+To ensure the quality of our analysis, we create a new DataFrame called `HeartDataFrame` by dropping the rows that contain at least one NaN value using the `dropna()` function. We then check the new size of the data using `HeartDataFrame.shape`.
 
-1. Clone this repository to your local machine.
-2. Ensure you have the necessary dependencies installed. You can find the required packages in the "requirements.txt" file.
-3. Open the Jupyter Notebook or Python script for the specific analysis you want to run.
-4. Modify the file paths or configurations if needed.
-5. Execute the code cells or run the script to perform the analysis.
+## Analyzing Features
 
-Feel free to explore the code and adapt it to your specific needs.
+We analyze various features in the dataset to gain insights into heart disease. Some of the features we analyze include:
 
-## License
+- Alcohol Drinking: We calculate the percentage of alcohol drinkers who have heart disease and the number of alcohol drinkers who have and haven't heart disease.
+- Smoking: We calculate the number of smoking persons who have and haven't heart disease.
+- Sex: We calculate the number of males and females in the dataset and the number of males and females who have and haven't heart disease.
+- Age Category: We count the number of heart disease cases for each age category.
+- Asthma: We count the number of persons who have and haven't asthma.
 
-The dataset and analysis code are released under the [MIT License](LICENSE). You are free to use, modify, and distribute the code and dataset for personal or commercial purposes.
+## Visualization
 
-## Contributing
+We use various visualization techniques to better understand the data. Some of the plots we create include:
 
-If you discover any issues or have suggestions for improvement, please open an issue or submit a pull request. Your contributions are highly appreciated!
+- Countplot of heart disease patients vs. non-heart disease patients in the dataset.
+- Countplot of smoking persons vs. non-smoking persons in the dataset.
+- Countplot of alcohol drinking persons vs. non-alcohol drinking persons in the dataset.
+- Countplot of males vs. females in the dataset.
+- Countplot of race color for persons in the dataset.
+- Countplot of general health of persons in the dataset.
+- Countplot of individuals infected with diabetes in the dataset.
+
+These visualizations help us visualize the distribution and relationships between different variables in the dataset.
+
+## Conclusion
+
+In conclusion, this analysis provides insights into heart disease based on the `heart_2020_cleaned.csv` dataset. The analysis includes data cleaning, feature analysis, and visualization to better understand the factors associated with heart disease.
