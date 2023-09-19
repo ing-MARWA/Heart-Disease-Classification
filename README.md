@@ -33,13 +33,12 @@ We analyze various features in the dataset to gain insights into heart disease. 
 
 We use various visualization techniques to better understand the data. Some of the plots we create include:
 
-- Countplot of heart disease patients vs. non-heart disease patients in the dataset.
-- Countplot of smoking persons vs. non-smoking persons in the dataset.
-- Countplot of alcohol drinking persons vs. non-alcohol drinking persons in the dataset.
-- Countplot of males vs. females in the dataset.
-- Countplot of race color for persons in the dataset.
-- Countplot of general health of persons in the dataset.
-- Countplot of individuals infected with diabetes in the dataset.
+- Countplot of Alcohol Drinking Vs Heart Disease patients in the dataset.
+- Countplot of Smoking Vs Heart Disease persons in the dataset.
+- Countplot of Gender Vs Heart Disease persons in the dataset.
+- Countplot of Age Category Vs Heart Disease persons in the dataset.
+- Boxplot of Physical Health Vs Heart Disease persons in the dataset.
+- Boxplot of Sleep Time Vs Heart Disease persons in the dataset.
 
 These visualizations help us visualize the distribution and relationships between different variables in the dataset.
 
